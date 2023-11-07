@@ -1,0 +1,44 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/accordion.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/air-datepicker.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/balloon_html-about.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/balloon_html-delivery.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/balloon_html-map.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/balloon_html__.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/choices.min.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/custom-select.min.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/main.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/mask.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/scroll-lock.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/swiper-bundle.min.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/swiper-init.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/tabs.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/tippy-bundle.umd.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/audiotech/js/validation.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/accordion.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/air-datepicker.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/balloon_html-about.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/balloon_html-delivery.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/balloon_html-map.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/balloon_html__.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/choices.min.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/custom-select.min.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/main.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/mask.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/scroll-lock.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/swiper-bundle.min.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/swiper-init.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/tabs.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/tippy-bundle.umd.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/audiotech/js/validation.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

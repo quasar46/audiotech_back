@@ -51,7 +51,6 @@
   z-index: 1;
   display: flex;
   transition-property: transform;
-  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
   box-sizing: content-box;
 }
 
@@ -776,7 +775,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
   background-color: #131313;
   opacity: 0;
   z-index: 100;
@@ -1151,17 +1149,6 @@ img {
   margin: 0 auto;
   flex: 0 0 622px;
 }
-@media (max-width: 1240px) {
-  .main-nav.active {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 700px) {
-  .main-nav.active {
-    height: 100vh;
-  }
-}
 .main-nav .btn {
   display: flex;
   width: 100%;
@@ -1192,17 +1179,17 @@ img {
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
   }
 }
-@media (max-width: 940px) {
-  .main-nav {
-    padding: 18px 34px 80px;
-    padding-left: 34px;
-    padding-right: 34px;
+@media (max-width: 1240px) and (max-width: 1240px) {
+  .main-nav.active {
+    display: flex;
     flex-direction: column;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 940px) {
   .main-nav {
-    padding-bottom: 120px;
+    padding: 18px 34px;
+    padding-bottom: 40px;
+    flex-direction: column;
   }
 }
 
@@ -1210,13 +1197,28 @@ img {
   color: #737373;
 }
 
-.main-nav__list {
+#horizontal-multilevel-menu.main-nav__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  background-color: #fff;
+  background-image: none;
 }
+
+#horizontal-multilevel-menu.main-nav__list li:hover {
+  background: transparent;
+}
+
+#horizontal-multilevel-menu.main-nav__list li:hover a {
+  color: #db1f26;
+}
+
+#horizontal-multilevel-menu.main-nav__list a {
+  padding: 0;
+}
+
 .main-nav__list > .main-nav__item {
   min-height: 60px;
 }
@@ -1281,7 +1283,7 @@ img {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background-image: url(../img/icns/md-cheveron-right.svg);
+    background-image: url(/local/templates/audiotech/img/icns/md-cheveron-right.svg);
     width: 24px;
     height: 24px;
     background-size: contain;
@@ -1334,7 +1336,7 @@ img {
 }
 @media (min-width: 1241px) {
   .main-nav__submenu-wrap {
-    box-shadow: 0px 4px 10px 0px rgba(19, 19, 19, 0.1);
+    box-shadow: 0 4px 10px 0 rgba(19, 19, 19, 0.1);
   }
 }
 
@@ -1412,7 +1414,7 @@ img {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background-image: url("../img/icns/md-cheveron-right.svg");
+    background-image: url("/local/templates/audiotech/img/icns/md-cheveron-right.svg");
     width: 24px;
     height: 24px;
     background-size: contain;
@@ -1551,7 +1553,7 @@ img {
 .main-nav-search::before {
   content: "";
   position: absolute;
-  background-image: url("../img/icns/md-search.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-search.svg");
   width: 24px;
   height: 24px;
   background-size: contain;
@@ -2155,7 +2157,6 @@ button {
 }
 @media (max-width: 940px) {
   .main-slider__title {
-    padding-bottom: 114px;
     padding-bottom: 60px;
   }
 }
@@ -2528,7 +2529,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../img/icns/play.svg");
+  background-image: url("/local/templates/audiotech/img/icns/play.svg");
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -2638,7 +2639,7 @@ button {
 }
 
 .main-submenu__link {
-  color: var(--primary-black, #131313);
+  color:  #131313;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -2778,7 +2779,7 @@ button {
   }
 }
 .human-block--doc1 {
-  background-image: url("../img/human-block/pic1.png"), url("../img/human-block/ellipses.svg"), url("../img/human-block/ellipse.svg");
+  background-image: url("/local/templates/audiotech/img/human-block/pic1.png"), url("/local/templates/audiotech/img/human-block/ellipses.svg"), url("/local/templates/audiotech/img/human-block/ellipse.svg");
   background-size: contain, 710px 450px, 205px 290px;
   background-position: left top, left bottom, bottom right;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -2797,13 +2798,13 @@ button {
 }
 @media (max-width: 700px) {
   .human-block--doc1 {
-    background-image: url("../img/human-block/h-block-m.png");
+    background-image: url("/local/templates/audiotech/img/human-block/h-block-m.png");
     background-position: left top;
     background-size: auto 260px;
   }
 }
 .human-block--doc2 {
-  background-image: url("../img/human-block/pic2.png"), url("../img/human-block/ellipses.svg"), url("../img/human-block/ellipse.svg");
+  background-image: url("/local/templates/audiotech/img/human-block/pic2.png"), url("/local/templates/audiotech/img/human-block/ellipses.svg"), url("/local/templates/audiotech/img/human-block/ellipse.svg");
   background-size: contain, 710px 450px, 205px 290px;
   background-position: left top, left bottom, bottom right;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -2823,7 +2824,7 @@ button {
 }
 @media (max-width: 700px) {
   .human-block--doc2 {
-    background-image: url("../img/human-block/h-block-m2.png");
+    background-image: url("/local/templates/audiotech/img/human-block/h-block-m2.png");
     background-position: left top;
     background-size: auto 260px;
   }
@@ -2964,7 +2965,7 @@ button {
   background-color: #F5F7FA;
   padding-top: 60px;
   min-height: 450px;
-  background-image: url("../img/white-headphones.png");
+  background-image: url("/local/templates/audiotech/img/white-headphones.png");
   background-position: top right 185px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3212,7 +3213,7 @@ button {
 }
 
 .find-centers__box:first-child {
-  background-image: url("../img/advant-back.jpg");
+  background-image: url("/local/templates/audiotech/img/advant-back.jpg");
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -4232,7 +4233,7 @@ button {
 .modal__item--dp::before {
   content: "";
   position: absolute;
-  background-image: url("../img/icns/md-calendar.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-calendar.svg");
   width: 24px;
   height: 24px;
   top: 50%;
@@ -4299,11 +4300,10 @@ button {
 }
 
 .modal__time label {
-  border-radius: 10px;
   border: 1px solid #E8EBED;
   position: relative;
   border-radius: 10px;
-  color: var(--primary-black, #131313);
+  color: #131313;
   font-size: 15px;
   font-weight: 400;
   line-height: 160%;
@@ -4350,7 +4350,7 @@ button {
 
 .custom-select-container * {
   box-sizing: border-box;
-  color: var(--primary-black, #131313);
+  color: #131313;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -4378,7 +4378,7 @@ button {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("../img/icns/md-cheveron-down.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-cheveron-down.svg");
   width: 24px;
   height: 24px;
   background-size: contain;
@@ -5808,15 +5808,9 @@ button {
   position: relative;
   margin-bottom: 40px;
   flex: 1 0 auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   scrollbar-width: 0;
   -ms-overflow-style: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   scrollbar-width: 0;
-  -ms-overflow-style: none;
-  scrollbar-color: white;
   scrollbar-color: white;
 }
 .tabs__nav::-webkit-scrollbar {
@@ -5886,7 +5880,6 @@ button {
 }
 @media (max-width: 700px) {
   .tabs__nav {
-    margin-bottom: 20px;
     margin-bottom: 30px;
     min-width: 100%;
     padding-left: 30px;
@@ -6066,7 +6059,7 @@ button {
   display: grid;
   grid-template-columns: auto 400px;
   grid-gap: 133px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 @media (max-width: 1240px) {
   .tabs__pane-wrap--product {
@@ -6230,7 +6223,7 @@ button {
 .counter__input input {
   width: 25px;
   background-color: #fff;
-  color: var(--primary-black, #131313);
+  color: #131313;
   text-align: center;
   font-size: 15px;
   font-weight: 500;
@@ -6744,7 +6737,7 @@ section.about {
   background-color: #fff;
   right: 20px;
   top: 20px;
-  background-image: url("../img/icns/md-x.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-x.svg");
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
@@ -6754,7 +6747,7 @@ section.about {
 .video-wrap__close:hover {
   background-color: #DB1F26;
   transition: all 0.3s ease;
-  background-image: url("../img/icns/md-x-hover.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-x-hover.svg");
 }
 .video-wrap video {
   width: 100%;
@@ -6795,7 +6788,7 @@ section.about {
   width: 120px;
   height: 120px;
   background-color: #DB1F26;
-  background-image: url(../img/icns/play-icn.svg);
+  background-image: url(/local/templates/audiotech/img/icns/play-icn.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -6847,7 +6840,7 @@ section.about {
   height: 120px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: url("../img/icns/play-icn.svg");
+  background-image: url("/local/templates/audiotech/img/icns/play-icn.svg");
   background-color: #DB1F26;
   background-size: 24px auto;
   background-position: center;
@@ -6944,7 +6937,7 @@ section.about {
 .ymaps-2-1-79-balloon__close-button {
   width: 24px !important;
   height: 24px !important;
-  background: url("../img/icns/md-x.svg") !important;
+  background: url("/local/templates/audiotech/img/icns/md-x.svg") !important;
   background-repeat: no-repeat;
   opacity: 1 !important;
 }
@@ -6988,7 +6981,7 @@ address ul li {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  font-family: SuisseIntl;
+  font-family: "SuisseIntl";
 }
 address b {
   font-size: 18px;
@@ -7280,7 +7273,6 @@ address label {
   max-width: 100%;
   font-family: SuisseIntl;
   color: #131313;
-  line-height: 160%;
   font-size: 15px;
   line-height: 24px;
 }
@@ -7294,7 +7286,7 @@ address label {
 .input--dp::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icns/md-calendar.svg);
+  background-image: url(/local/templates/audiotech/img/icns/md-calendar.svg);
   width: 24px;
   height: 24px;
   top: 50%;
@@ -7382,7 +7374,7 @@ address label {
   height: 40px;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url("../img/icns/md-zoom.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-zoom.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
@@ -7535,7 +7527,7 @@ address label {
   margin-bottom: 20px;
 }
 .news-page__content p {
-  color: var(--primary-black, #131313);
+  color: #131313;
   font-size: 15px;
   font-weight: 400;
   line-height: 160%;
@@ -7783,7 +7775,7 @@ address label {
     padding: 30px 20px;
   }
 }
-@media ((max-width: 940px) and (min-width: 700px)) {
+@media (max-width: 940px) and (min-width: 700px) {
   .aside-block {
     display: none;
   }
@@ -7798,7 +7790,7 @@ address label {
     margin-right: 30px;
   }
 }
-@media ((max-width: 940px) and (min-width: 700px)) {
+@media (max-width: 940px) and (min-width: 700px) {
   .aside-block--questions {
     display: block;
   }
@@ -7909,7 +7901,7 @@ address label {
   width: 24px;
   height: 24px;
   margin-left: auto;
-  background-image: url("../img/icns/md-plus.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-plus.svg");
   position: absolute;
   right: 0;
   background-repeat: no-repeat;
@@ -7962,7 +7954,7 @@ address label {
 }
 
 .accordion__item.open .accordion__header::after {
-  background-image: url("../img/icns/md-minus.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-minus.svg");
 }
 
 .materials__list {
@@ -8087,7 +8079,7 @@ address label {
   max-width: 1027px;
   margin: 0 auto;
   margin-top: 50px;
-  background-image: url("../img/404.svg");
+  background-image: url("/local/templates/audiotech/img/404.svg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: left center;
@@ -8161,7 +8153,7 @@ address label {
 }
 
 .big-banner {
-  background-image: url("../img/banner.jpg");
+  background-image: url("/local/templates/audiotech/img/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -8302,7 +8294,7 @@ address label {
 .big-banner__list {
   padding: 0;
   margin: 0;
-  color: var(--primary-white, #FFF);
+  color:  #FFF;
   font-size: 15px;
   font-weight: 400;
   line-height: 160%;
@@ -8551,16 +8543,16 @@ address label {
   gap: 10px;
 }
 .steps__item:first-child .steps__number:after {
-  background-image: url("../img/icns/dots_item.svg");
+  background-image: url("/local/templates/audiotech/img/icns/dots_item.svg");
 }
 .steps__item:nth-child(2) .steps__number:after {
-  background-image: url("../img/icns/dots_item_2.svg");
+  background-image: url("/local/templates/audiotech/img/icns/dots_item_2.svg");
 }
 .steps__item:nth-child(3) .steps__number:after {
-  background-image: url("../img/icns/dots_item_3.svg");
+  background-image: url("/local/templates/audiotech/img/icns/dots_item_3.svg");
 }
 .steps__item:nth-child(4) .steps__number:after {
-  background-image: url("../img/icns/dots_item_4.svg");
+  background-image: url("/local/templates/audiotech/img/icns/dots_item_4.svg");
 }
 
 .steps__number {
@@ -8872,7 +8864,7 @@ address label {
 @media (max-width: 700px) {
   .personal__exit {
     margin-left: 10px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 @media (max-width: 700px) {
@@ -9023,7 +9015,7 @@ input.input-action[type=checkbox] + label::before {
 }
 
 input.input-action[type=checkbox]:checked + label::before {
-  background-image: url("../img/icns/md-check.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-check.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #DB1F26;
@@ -9031,7 +9023,7 @@ input.input-action[type=checkbox]:checked + label::before {
 }
 
 input.input-action[type=radio]:checked + label::before {
-  background-image: url("../img/icns/rad-active.svg");
+  background-image: url("/local/templates/audiotech/img/icns/rad-active.svg");
   border: none;
 }
 
@@ -9242,7 +9234,7 @@ input.input-action[type=radio]:checked + label::before {
 }
 .orders-status__states .orders-status__tracking--completed .orders-status__state {
   background-color: #0BBC61;
-  background-image: url("../img/icns/md-check.svg");
+  background-image: url("/local/templates/audiotech/img/icns/md-check.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px auto;
@@ -9425,7 +9417,6 @@ input.input-action[type=radio]:checked + label::before {
 }
 
 [data-tippy-root] {
-  max-width: calc(100vw - 10px);
   max-width: 190px;
 }
 

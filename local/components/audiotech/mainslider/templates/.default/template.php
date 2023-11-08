@@ -5,7 +5,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 ?>
 
 
-<?php foreach ($arResult['SLIDES'] as $arItem) { ?>
+<?php foreach ($arResult['ITEMS'] as $arItem) { ?>
     <div class="swiper-slide">
         <picture class="main-slider__pic"><img src="<?php echo $arItem['URL_PICTURE']; ?>" alt=""></picture>
         <div class="_container">

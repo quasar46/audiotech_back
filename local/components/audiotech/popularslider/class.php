@@ -23,7 +23,7 @@ class AudiotechPopularSlider extends CBitrixComponent
     private function _checkModules()
     {
         if (!Loader::includeModule('iblock')) {
-            throw new \Exceprion('Не загружены необходимые модули для работы модуля');
+            throw new \Exception('Не загружены необходимые модули для работы модуля');
         }
         return true;
     }

@@ -23,7 +23,7 @@ class AudiotechOffers extends CBitrixComponent
     private function _checkModules()
     {
         if (!Loader::includeModule('iblock')) {
-            throw new \Exceprion('Не загружены необходимые модули для работы модуля');
+            throw new \Exception('Не загружены необходимые модули для работы модуля');
         }
         return true;
     }
@@ -32,7 +32,12 @@ class AudiotechOffers extends CBitrixComponent
     {
         $arElements = ElementOffersTable::getlist([
             'select' => [
-                '*'
+                'NAME',
+                'PREVIEW_PICTURE',
+                'DETAIL_TEXT',
+                'ATT_BTN_TEXT_' => 'ATT_BTN_TEXT',
+                'ATT_LINK_' => 'ATT_LINK',
+                'ATT_PICTURE_LINK_' => 'ATT_PICTURE_LINK',
             ],
             'filter' => [
                 'ACTIVE' => 'Y',

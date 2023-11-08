@@ -23,7 +23,7 @@ class AudiotechMainslider extends CBitrixComponent
     private function _checkModules()
     {
         if (!Loader::includeModule('iblock')) {
-            throw new \Exceprion('Не загружены необходимые модули для работы модуля');
+            throw new \Exception('Не загружены необходимые модули для работы модуля');
         }
         return true;
     }
@@ -50,6 +50,6 @@ class AudiotechMainslider extends CBitrixComponent
             $arElements[$key]['URL_PICTURE'] = \CFile::GetPath($arItem['PREVIEW_PICTURE']);
         }
 
-        $this->arResult['SLIDES'] = $arElements;
+        $this->arResult['ITEMS'] = $arElements;
     }
 }

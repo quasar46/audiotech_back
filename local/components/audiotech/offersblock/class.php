@@ -5,9 +5,9 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
 use Bitrix\Main\Application;
 use Bitrix\Main\Loader;
-use Bitrix\Iblock\Elements\ElementOffersTable;
+use Bitrix\Iblock\Elements\ElementOffersblockTable;
 
-class AudiotechOffers extends CBitrixComponent
+class AudiotechOffersblock extends CBitrixComponent
 {
 
     public function executeComponent()
@@ -30,7 +30,7 @@ class AudiotechOffers extends CBitrixComponent
 
     public function getElements()
     {
-        $arElements = ElementOffersTable::getlist([
+        $arElements = ElementOffersblockTable::getlist([
             'select' => [
                 'NAME',
                 'PREVIEW_PICTURE',

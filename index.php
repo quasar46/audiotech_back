@@ -180,7 +180,7 @@ $APPLICATION->IncludeComponent(
         </div>
     </section>
 <?php $APPLICATION->IncludeComponent(
-    "audiotech:offers",
+    "audiotech:offersblock",
     "",
 ) ?>
 <?php $APPLICATION->IncludeComponent(

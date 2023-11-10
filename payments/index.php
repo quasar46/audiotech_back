@@ -46,7 +46,7 @@ $APPLICATION->SetTitle("Покупака и оплата");
         <div class="_container">
             <div class="offers__wrap">
                 <?php $APPLICATION->IncludeComponent(
-                    'audiotech:offers',
+                    'audiotech:offersblock',
                     '',
                 ) ?>
             </div>

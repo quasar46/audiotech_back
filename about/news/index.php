@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Новости");
 ?>
-    <section class="about">
+    <div class="about">
         <div class="_container">
             <h1 class="title-page">О нас</h1>
         </div>
@@ -167,5 +167,5 @@ $APPLICATION->SetTitle("Новости");
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

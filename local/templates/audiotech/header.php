@@ -24,10 +24,6 @@ $CurUri = $APPLICATION->GetCurUri();
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/mask.js');
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/custom-select.min.js');
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/air-datepicker.js');
-    if ($CurUri == '/about/company/') {
-        $obAsset->addJs('https://api-maps.yandex.ru/2.1/?lang=ru_RU');
-        $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/balloon_html-about.js');
-    }
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/tabs.js');
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/validation.js');
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/accordion.js');

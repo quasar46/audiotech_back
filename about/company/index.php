@@ -2,7 +2,16 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Компания");
 ?>
-    <section class="about">
+<?php
+
+use Bitrix\Main\Page\Asset;
+
+$obAsset = Asset::getInstance();
+$obAsset->addJs('https://api-maps.yandex.ru/2.1/?lang=ru_RU');
+$obAsset->addJs(SITE_TEMPLATE_PATH . '/js/balloon_html-about.js');
+
+?>
+    <div class="about">
         <div class="_container">
             <h1 class="title-page">О нас</h1>
         </div>
@@ -482,5 +491,5 @@ $APPLICATION->SetTitle("Компания");
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Специалисты");
 ?>
-    <section class="about">
+    <div class="about">
         <div class="_container">
             <h1 class="title-page">О нас</h1>
         </div>
@@ -18,7 +18,8 @@ $APPLICATION->SetTitle("Специалисты");
                     <div class="tabs__pane-wrap">
                         <div class="about__doctors doctors">
                             <div class="doctors__item"><img class="doctors__pic"
-                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg" alt=""><span
+                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg"
+                                                            alt=""><span
                                         class="doctors__profile">Врач оториноларинголог-сурдолог</span><span
                                         class="doctors__name">Васильева Екатерина Вячеславовна1</span><span
                                         class="doctors__education">Кандидат медицинских наук <br>Стаж 8 лет</span>
@@ -35,7 +36,8 @@ $APPLICATION->SetTitle("Специалисты");
                                 </button>
                             </div>
                             <div class="doctors__item"><img class="doctors__pic"
-                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg" alt=""><span
+                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg"
+                                                            alt=""><span
                                         class="doctors__profile">Врач оториноларинголог-сурдолог</span><span
                                         class="doctors__name">Васильева Екатерина Вячеславовна2</span><span
                                         class="doctors__education">Кандидат медицинских наук <br>Стаж 8 лет</span>
@@ -52,7 +54,8 @@ $APPLICATION->SetTitle("Специалисты");
                                 </button>
                             </div>
                             <div class="doctors__item"><img class="doctors__pic"
-                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg" alt=""><span
+                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg"
+                                                            alt=""><span
                                         class="doctors__profile">Врач оториноларинголог-сурдолог</span><span
                                         class="doctors__name">Васильева Екатерина Вячеславовна3</span><span
                                         class="doctors__education">Кандидат медицинских наук <br>Стаж 8 лет</span>
@@ -69,7 +72,8 @@ $APPLICATION->SetTitle("Специалисты");
                                 </button>
                             </div>
                             <div class="doctors__item"><img class="doctors__pic"
-                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg" alt=""><span
+                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg"
+                                                            alt=""><span
                                         class="doctors__profile">Врач оториноларинголог-сурдолог</span><span
                                         class="doctors__name">Васильева Екатерина Вячеславовна4</span><span
                                         class="doctors__education">Кандидат медицинских наук <br>Стаж 8 лет</span>
@@ -86,7 +90,8 @@ $APPLICATION->SetTitle("Специалисты");
                                 </button>
                             </div>
                             <div class="doctors__item"><img class="doctors__pic"
-                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg" alt=""><span
+                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg"
+                                                            alt=""><span
                                         class="doctors__profile">Врач оториноларинголог-сурдолог</span><span
                                         class="doctors__name">Васильева Екатерина Вячеславовна5</span><span
                                         class="doctors__education">Кандидат медицинских наук <br>Стаж 8 лет</span>
@@ -103,7 +108,8 @@ $APPLICATION->SetTitle("Специалисты");
                                 </button>
                             </div>
                             <div class="doctors__item"><img class="doctors__pic"
-                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg" alt=""><span
+                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg"
+                                                            alt=""><span
                                         class="doctors__profile">Врач оториноларинголог-сурдолог</span><span
                                         class="doctors__name">Васильева Екатерина Вячеславовна6</span><span
                                         class="doctors__education">Кандидат медицинских наук <br>Стаж 8 лет</span>
@@ -120,7 +126,8 @@ $APPLICATION->SetTitle("Специалисты");
                                 </button>
                             </div>
                             <div class="doctors__item"><img class="doctors__pic"
-                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg" alt=""><span
+                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg"
+                                                            alt=""><span
                                         class="doctors__profile">Врач оториноларинголог-сурдолог</span><span
                                         class="doctors__name">Васильева Екатерина Вячеславовна7</span><span
                                         class="doctors__education">Кандидат медицинских наук <br>Стаж 8 лет</span>
@@ -137,7 +144,8 @@ $APPLICATION->SetTitle("Специалисты");
                                 </button>
                             </div>
                             <div class="doctors__item"><img class="doctors__pic"
-                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg" alt=""><span
+                                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/doc1.jpg"
+                                                            alt=""><span
                                         class="doctors__profile">Врач оториноларинголог-сурдолог</span><span
                                         class="doctors__name">Васильева Екатерина Вячеславовна8</span><span
                                         class="doctors__education">Кандидат медицинских наук <br>Стаж 8 лет</span>
@@ -161,7 +169,8 @@ $APPLICATION->SetTitle("Специалисты");
                                         <path d="M11 5L4 12M4 12L11 19M4 12H20" stroke="#131313" stroke-width="2"
                                               stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                </a><a class="pagination__page active" href="">1</a><a class="pagination__page" href="">2</a><a
+                                </a><a class="pagination__page active" href="">1</a><a class="pagination__page"
+                                                                                       href="">2</a><a
                                         class="pagination__page" href="">...</a><a class="pagination__page"
                                                                                    href="">19</a><a
                                         class="pagination__next" href="">
@@ -178,5 +187,5 @@ $APPLICATION->SetTitle("Специалисты");
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

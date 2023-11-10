@@ -6549,10 +6549,6 @@ button {
   }
 }
 
-section.about {
-  margin-bottom: 0;
-}
-
 .about__text {
   display: grid;
   grid-template-columns: 1fr 1fr;

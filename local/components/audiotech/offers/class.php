@@ -37,7 +37,7 @@ class AudiotechOffers extends CBitrixComponent
                 'DETAIL_TEXT',
                 'ATT_BTN_TEXT_' => 'ATT_BTN_TEXT',
                 'ATT_LINK_' => 'ATT_LINK',
-                'ATT_PICTURE_LINK_' => 'ATT_PICTURE_LINK',
+                'ATT_PICTURE_' => 'ATT_PICTURE',
             ],
             'filter' => [
                 'ACTIVE' => 'Y',
@@ -48,8 +48,9 @@ class AudiotechOffers extends CBitrixComponent
         ])->fetchAll();
 
         foreach ($arElements as $key => $arItem) {
-            $arElements[$key]['URL_PICTURE'] = \CFile::GetPath($arItem['PREVIEW_PICTURE']);
+            $arElements[$key]['URL_PICTURE'] = \CFile::GetPath($arItem['ATT_PICTURE_IBLOCK_GENERIC_VALUE']);
         }
+
 
         $this->arResult['ITEMS'] = $arElements;
     }

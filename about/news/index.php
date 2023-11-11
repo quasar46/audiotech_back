@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Новости");
 ?>
@@ -40,108 +40,98 @@ $APPLICATION->SetTitle("Новости");
                                     </svg>
                                     <span>Подписаться</span></button>
                             </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше </a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха 8 советов, чтобы лучше понять человека с потерей слуха 8 советов,
-                                    чтобы лучше понять человека с потерей слуха 8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение. который поможет лучше понять
-                                    человека с потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.Чек-лист, который поможет
-                                    лучше понять человека с потерей слуха и выстроить с ним доверительное
-                                    общение.Чек-лист, который поможет лучше понять человека с потерей слуха и выстроить
-                                    с ним доверительное общение.Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
-                            <div class="article-preview"><a class="article-preview__pic" href=""><img
-                                            src="<?php echo SITE_TEMPLATE_PATH; ?>/img/pictures/pic1.jpg" alt=""></a>
-                                <div class="article-preview__date">25 фев 2023</div>
-                                <a class="article-preview__name" href="">8 советов, чтобы лучше понять человека с
-                                    потерей слуха</a>
-                                <p class="article-preview__text">Чек-лист, который поможет лучше понять человека с
-                                    потерей слуха и выстроить с ним доверительное общение.</p>
-                            </div>
+                            <?php $APPLICATION->IncludeComponent(
+                                "bitrix:news",
+                                "news",
+                                array(
+                                    "ADD_ELEMENT_CHAIN" => "N",
+                                    "ADD_SECTIONS_CHAIN" => "Y",
+                                    "AJAX_MODE" => "N",
+                                    "AJAX_OPTION_ADDITIONAL" => "",
+                                    "AJAX_OPTION_HISTORY" => "N",
+                                    "AJAX_OPTION_JUMP" => "N",
+                                    "AJAX_OPTION_STYLE" => "N",
+                                    "BROWSER_TITLE" => "-",
+                                    "CACHE_FILTER" => "N",
+                                    "CACHE_GROUPS" => "N",
+                                    "CACHE_TIME" => "36000000",
+                                    "CACHE_TYPE" => "A",
+                                    "CHECK_DATES" => "Y",
+                                    "DETAIL_ACTIVE_DATE_FORMAT" => "j M Y",
+                                    "DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
+                                    "DETAIL_DISPLAY_TOP_PAGER" => "N",
+                                    "DETAIL_FIELD_CODE" => array(
+                                        0 => "",
+                                        1 => "",
+                                    ),
+                                    "DETAIL_PAGER_SHOW_ALL" => "N",
+                                    "DETAIL_PAGER_TEMPLATE" => "",
+                                    "DETAIL_PAGER_TITLE" => "Страница",
+                                    "DETAIL_PROPERTY_CODE" => array(
+                                        0 => "",
+                                        1 => "",
+                                    ),
+                                    "DETAIL_SET_CANONICAL_URL" => "N",
+                                    "DISPLAY_BOTTOM_PAGER" => "N",
+                                    "DISPLAY_DATE" => "Y",
+                                    "DISPLAY_NAME" => "Y",
+                                    "DISPLAY_PICTURE" => "Y",
+                                    "DISPLAY_PREVIEW_TEXT" => "Y",
+                                    "DISPLAY_TOP_PAGER" => "N",
+                                    "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                                    "IBLOCK_ID" => "17",
+                                    "IBLOCK_TYPE" => "content",
+                                    "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+                                    "LIST_ACTIVE_DATE_FORMAT" => "j M Y",
+                                    "LIST_FIELD_CODE" => array(
+                                        0 => "",
+                                        1 => "",
+                                    ),
+                                    "LIST_PROPERTY_CODE" => array(
+                                        0 => "",
+                                        1 => "",
+                                    ),
+                                    "MESSAGE_404" => "",
+                                    "META_DESCRIPTION" => "-",
+                                    "META_KEYWORDS" => "-",
+                                    "NEWS_COUNT" => "12",
+                                    "PAGER_BASE_LINK_ENABLE" => "N",
+                                    "PAGER_DESC_NUMBERING" => "N",
+                                    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                                    "PAGER_SHOW_ALL" => "N",
+                                    "PAGER_SHOW_ALWAYS" => "N",
+                                    "PAGER_TEMPLATE" => ".default",
+                                    "PAGER_TITLE" => "Новости",
+                                    "PREVIEW_TRUNCATE_LEN" => "",
+                                    "SEF_FOLDER" => "/about/news/",
+                                    "SEF_MODE" => "Y",
+                                    "SET_LAST_MODIFIED" => "N",
+                                    "SET_STATUS_404" => "Y",
+                                    "SET_TITLE" => "Y",
+                                    "SHOW_404" => "N",
+                                    "SORT_BY1" => "ACTIVE_FROM",
+                                    "SORT_BY2" => "SORT",
+                                    "SORT_ORDER1" => "DESC",
+                                    "SORT_ORDER2" => "ASC",
+                                    "STRICT_SECTION_CHECK" => "N",
+                                    "USE_CATEGORIES" => "N",
+                                    "USE_FILTER" => "N",
+                                    "USE_PERMISSIONS" => "N",
+                                    "USE_RATING" => "N",
+                                    "USE_REVIEW" => "N",
+                                    "USE_RSS" => "N",
+                                    "USE_SEARCH" => "N",
+                                    "USE_SHARE" => "N",
+                                    "COMPONENT_TEMPLATE" => "news",
+                                    "SEF_URL_TEMPLATES" => array(
+                                        "news" => "/about/news/",
+                                        "section" => "/about/news/#ELEMENT_CODE#/",
+                                        "detail" => "#ELEMENT_CODE#/",
+                                    )
+                                ),
+                                false
+                            ); ?>
+
                         </div>
                         <div class="pagination">
                             <div class="pagination__list"><a class="pagination__prev" href="">
@@ -150,7 +140,8 @@ $APPLICATION->SetTitle("Новости");
                                         <path d="M11 5L4 12M4 12L11 19M4 12H20" stroke="#131313" stroke-width="2"
                                               stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                </a><a class="pagination__page active" href="">1</a><a class="pagination__page" href="">2</a><a
+                                </a><a class="pagination__page active" href="">1</a><a class="pagination__page"
+                                                                                       href="">2</a><a
                                         class="pagination__page" href="">...</a><a class="pagination__page"
                                                                                    href="">19</a><a
                                         class="pagination__next" href="">
@@ -168,4 +159,4 @@ $APPLICATION->SetTitle("Новости");
             </div>
         </div>
     </div>
-<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+<?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

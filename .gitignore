@@ -1,3 +1,4 @@
 *.log
 bitrix/
 build/
+upload/

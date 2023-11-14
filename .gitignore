@@ -1,4 +1,4 @@
 *.log
-bitrix/
-build/
-upload/
+/bitrix/
+/build/
+/upload/

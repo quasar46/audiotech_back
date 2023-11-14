@@ -14,7 +14,7 @@ $APPLICATION->SetTitle("Лицензии");
                 <a class="tabs__btn active" href="/about/licenses">Лицензии</a>
             </div>
             <div class="tabs__content">
-                <div class="tabs__pane show">
+                <div class="tabs__pane">
                     <div class="tabs__pane-wrap">
                         <div class="licenses">
                             <div class="licenses__item"><a class="licenses__link"

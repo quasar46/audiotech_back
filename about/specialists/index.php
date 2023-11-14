@@ -14,7 +14,7 @@ $APPLICATION->SetTitle("Специалисты");
                 <a class="tabs__btn" href="/about/licenses">Лицензии</a>
             </div>
             <div class="tabs__content">
-                <div class="tabs__pane show">
+                <div class="tabs__pane">
                     <div class="tabs__pane-wrap">
                         <div class="about__doctors doctors">
                             <div class="doctors__item"><img class="doctors__pic"

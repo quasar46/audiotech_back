@@ -7079,7 +7079,7 @@ address label {
   align-self: flex-start;
 }
 
-.news {
+.news__list {
   display: grid;
   grid-template-columns: repeat(4, 295px);
   grid-gap: 40px 20px;
@@ -7087,23 +7087,23 @@ address label {
   align-items: flex-start;
 }
 @media (max-width: 1240px) {
-  .news {
+  .news__list {
     grid-template-columns: repeat(4, 220px);
   }
 }
 @media (max-width: 940px) {
-  .news {
+  .news__list {
     grid-template-columns: repeat(3, 220px);
   }
 }
 @media (max-width: 700px) {
-  .news {
+  .news__list {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
 }
 @media (max-width: 1240px) {
-  .news .subscribe {
+  .news__list .subscribe {
     padding: 30px 20px;
   }
 }

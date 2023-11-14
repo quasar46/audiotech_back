@@ -445,12 +445,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const moveEl = function () {
         const newElement = document.querySelector('.about .subscribe');
-        const parentElement = document.querySelector('.about .news');
+        const parentElement = document.querySelector('.about .news__list');
         let referenceElement;
         if (window.innerWidth > 940) {
-            referenceElement = document.querySelector('.article-preview:nth-child(5)');
-        } else if (window.innerWidth <= 940 && window.innerWidth > 700) {
             referenceElement = document.querySelector('.article-preview:nth-child(4)');
+        } else if (window.innerWidth <= 940 && window.innerWidth > 700) {
+            referenceElement = document.querySelector('.article-preview:nth-child(3)');
         }
         parentElement.insertBefore(newElement, referenceElement);
     }

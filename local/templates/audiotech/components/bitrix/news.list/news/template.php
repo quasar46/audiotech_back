@@ -14,16 +14,10 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
         <div class="tabs__content">
             <div class="tabs__pane show">
                 <div class="tabs__pane-wrap">
-                    <div class="chips">
-                        <div class="chips__inner">
-                            <a class="chips__item">Все</a>
-                            <?php foreach ($arResult['SECTION'] as $arSection) : ?>
-                            <a class="chips__item" href="<?php echo $arSection['SECTION_PAGE_URL']?>">
-                                <?php echo $arSection['NAME'] ?>
-                            </a>
-                            <?php endforeach ?>
-                        </div>
-                    </div>
+                    <?php $APPLICATION->IncludeComponent(
+                        'audiotech:section.list',
+                        '',
+                    ) ?>
                     <div class="news">
                         <div class="subscribe">
                             <h2 class="aside-block__title">Подписаться на рассылку</h2>

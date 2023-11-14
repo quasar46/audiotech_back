@@ -2,19 +2,14 @@
     die();
 }
 
+use Bitrix\Main\Page\Asset;
+
 global $APPLICATION;
-
-
-$CurDir = $APPLICATION->GetCurDir();
-$CurUri = $APPLICATION->GetCurUri();
 ?>
 <!doctype html>
 <html xml:lang="<?= LANGUAGE_ID ?>" lang="<?= LANGUAGE_ID ?>">
 <head>
     <?php
-
-    use Bitrix\Main\Page\Asset;
-
     $obAsset = Asset::getInstance();
     $obAsset->addCss(SITE_TEMPLATE_PATH . '/template_styles.css');
     $obAsset->addCss(SITE_TEMPLATE_PATH . '/fonts/SuisseIntl/stylesheet.min.css');
@@ -27,14 +22,14 @@ $CurUri = $APPLICATION->GetCurUri();
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/tabs.js');
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/validation.js');
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/accordion.js');
-    //    $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/popper.min.js');
-    //    $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/tippy-bundle.umd.js');
+    $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/popper.min.js');
+    $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/tippy-bundle.umd.js');
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
     $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/jquery-3.7.1.min.js');
-    //    $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/balloon_html-delivery.js');
-    //    $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/balloon_html-map.js');
-    $APPLICATION->ShowHead();
+    $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/balloon_html-delivery.js');
+    $obAsset->addJs(SITE_TEMPLATE_PATH . '/js/balloon_html-map.js');
     ?>
+    <?php $APPLICATION->ShowHead(); ?>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title><?php $APPLICATION->ShowTitle() ?></title>
 </head>

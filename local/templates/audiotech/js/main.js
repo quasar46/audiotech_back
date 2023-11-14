@@ -235,7 +235,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         target.closest('.counter').querySelector('.counter__btn--minus').classList.add('disabled');
                     } else {
                         target.closest('.counter').querySelector('.counter__btn--minus').classList.remove('disabled');
-                    } target.closest('.counter').querySelector('input').value = value;
+                    }
+                    target.closest('.counter').querySelector('input').value = value;
                 }
             })
         })
@@ -442,21 +443,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
-    const moveEl = function () {
-        const newElement = document.querySelector('.about .subscribe');
-        const parentElement = document.querySelector('.about .news__list');
-        let referenceElement;
-        if (window.innerWidth > 940) {
-            referenceElement = document.querySelector('.article-preview:nth-child(4)');
-        } else if (window.innerWidth <= 940 && window.innerWidth > 700) {
-            referenceElement = document.querySelector('.article-preview:nth-child(3)');
+    // блок подписаться в новостях
+    if (document.querySelector('.about .subscribe')) {
+        const moveEl = function () {
+            const newElement = document.querySelector('.about .subscribe');
+            const parentElement = document.querySelector('.about .news__list');
+            let referenceElement;
+            if (window.innerWidth > 940) {
+                referenceElement = document.querySelector('.article-preview:nth-child(4)');
+            } else if (window.innerWidth <= 940 && window.innerWidth > 700) {
+                referenceElement = document.querySelector('.article-preview:nth-child(3)');
+            }
+            parentElement.insertBefore(newElement, referenceElement);
         }
-        parentElement.insertBefore(newElement, referenceElement);
+        if (document.querySelectorAll('.about .subscribe').length > 0) {
+            moveEl();
+        }
     }
-    if (document.querySelectorAll('.about .subscribe').length > 0) {
-        moveEl();
-    }
+
 
     const posModalReg = function () {
         const headerTopHeight = document.querySelector('.header-top').clientHeight;
@@ -495,8 +499,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.querySelectorAll('.license-overlay').length > 0) {
         myFancy();
     }
-
-
 
 
 });

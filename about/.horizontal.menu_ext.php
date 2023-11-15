@@ -10,7 +10,7 @@ $aMenuLinksExt = $APPLICATION->IncludeComponent(
         "ID" => $_REQUEST["ELEMENT_ID"],
         "IBLOCK_TYPE" => "content",
         "IBLOCK_ID" => "22",
-        "SECTION_URL" => "/about/#SECTION_ID#/",
+//        "SECTION_URL" => "/about/",
         "CACHE_TIME" => "3600"
     )
 );

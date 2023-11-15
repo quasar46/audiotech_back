@@ -6,14 +6,14 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 use Bitrix\Main\Application;
 use Bitrix\Main\Loader;
 
-class AudiotechSimilarSlider extends CBitrixComponent
+class AudiotechSectionList extends CBitrixComponent
 {
 
     public function executeComponent()
     {
         $this->_checkModules();
         if ($this->StartResultCache()) {
-            $this->getElements();
+            $this->getSections();
         }
 
         $this->includeComponentTemplate();
@@ -27,14 +27,17 @@ class AudiotechSimilarSlider extends CBitrixComponent
         return true;
     }
 
-    public function getElements()
+    public function getSections()
     {
         $rsSection = \Bitrix\Iblock\SectionTable::getList(array(
-            'filter' => array(
-                'IBLOCK_ID' => 17,
-                'DEPTH_LEVEL' => 1,
-            ),
-            'select' => array('ID', 'CODE', 'NAME'),
+            'filter' => [
+                'IBLOCK_ID' => $this->arParams['IBLOCK_ID'],
+            ],
+            'select' => [
+                'ID',
+                'CODE',
+                'NAME'
+            ],
         ));
 
         while ($arSection = $rsSection->fetch()) {

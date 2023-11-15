@@ -7,7 +7,7 @@ use Bitrix\Main\Application;
 use Bitrix\Main\Loader;
 use Bitrix\Iblock\Elements\ElementMainsliderTable;
 
-class AudiotechMainslider extends CBitrixComponent
+class AudiotechMainSlider extends CBitrixComponent
 {
 
     public function executeComponent()

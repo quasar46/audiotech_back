@@ -7,7 +7,7 @@ use Bitrix\Main\Application;
 use Bitrix\Main\Loader;
 use Bitrix\Iblock\Elements\ElementOffersbannersTable;
 
-class AudiotechOffersbanners extends CBitrixComponent
+class AudiotechOffersBanners extends CBitrixComponent
 {
 
     public function executeComponent()

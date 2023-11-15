@@ -5,13 +5,25 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 
 <div class="news__list">
     <?php foreach ($arResult['ITEMS'] as $arItem) { ?>
-        <div class="article-preview"><a class="article-preview__pic"
-                                        href="<?php echo $arItem['DETAIL_PAGE_URL'] ?>"><img
-                        src="<?php echo $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt=""></a>
+        <div class="article-preview">
+            <a class="article-preview__pic" href="<?php echo $arItem['DETAIL_PAGE_URL'] ?>">
+                <img src="<?php echo $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="">
+            </a>
             <div class="article-preview__date"><?php echo $arItem['DATE_CREATE'] ?></div>
             <a class="article-preview__name"
-               href="<?php echo $arItem['DETAIL_PAGE_URL'] ?>"><?php echo $arItem['NAME'] ?></a>
+               href="<?php echo $arItem['DETAIL_PAGE_URL'] ?>"><?php echo $arItem['NAME'] ?>
+            </a>
             <p class="article-preview__text"><?php echo $arItem['DETAIL_TEXT'] ?></p>
         </div>
     <?php } ?>
+</div>
+<?=$arResult['NAV_STRING']?>
+<div class="pagination">
+    <div class="pagination__list">
+        <a class="pagination__prev" href=""> </a><a class="pagination__page active" href="">1</a><a
+                class="pagination__page" href="">2</a><a class="pagination__page" href="">...</a><a
+                class="pagination__page" href="">19</a><a class="pagination__next" href=""> </a>
+    </div>
+    <button class="btn btn--grey btn--m">Показать ещё &nbsp;<span id="cur-page">15</span>&nbsp;из&nbsp;
+        <span id="total-pages">100</span></button>
 </div>

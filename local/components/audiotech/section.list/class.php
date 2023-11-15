@@ -29,7 +29,7 @@ class AudiotechSectionList extends CBitrixComponent
 
     public function getSections()
     {
-        $rsSection = \Bitrix\Iblock\SectionTable::getList(array(
+        $rsSection = \Bitrix\Iblock\SectionTable::getList([
             'filter' => [
                 'IBLOCK_ID' => $this->arParams['IBLOCK_ID'],
             ],
@@ -38,7 +38,7 @@ class AudiotechSectionList extends CBitrixComponent
                 'CODE',
                 'NAME'
             ],
-        ));
+        ]);
 
         while ($arSection = $rsSection->fetch()) {
             $this->arResult['ITEMS'][] = $arSection;

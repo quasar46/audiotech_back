@@ -36,6 +36,7 @@ $this->setFrameMode(true); ?>
                         ]
                     ) ?>
                     <div class="news">
+                        <?php //TODO компонент подписки ?>
                         <div class="subscribe">
                             <h2 class="aside-block__title">Подписаться на рассылку</h2>
                             <div class="input__overlay">
@@ -46,7 +47,6 @@ $this->setFrameMode(true); ?>
                             </p>
                             <button class="btn btn--red btn--l btn--icn" type="submit">Подписаться</button>
                         </div>
-                        <?php //TODO компонент подписки ?>
                         <?php $APPLICATION->IncludeComponent(
                             "bitrix:news.list",
                             "news",

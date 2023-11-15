@@ -94,7 +94,7 @@ global $APPLICATION;
                     <nav class="header-bottom__nav main-nav">
                         <?php $APPLICATION->IncludeComponent(
                             "bitrix:menu",
-                            "main_menu",
+                            "main",
                             array(
                                 "ALLOW_MULTI_SELECT" => "N",
                                 "CHILD_MENU_TYPE" => "section",
@@ -104,7 +104,7 @@ global $APPLICATION;
                                 "MENU_CACHE_TIME" => "3600",
                                 "MENU_CACHE_TYPE" => "N",
                                 "MENU_CACHE_USE_GROUPS" => "Y",
-                                "ROOT_MENU_TYPE" => "main_menu",
+                                "ROOT_MENU_TYPE" => "main",
                                 "USE_EXT" => "N"
                             )
                         ); ?>

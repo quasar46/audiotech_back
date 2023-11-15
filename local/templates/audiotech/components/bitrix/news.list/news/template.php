@@ -17,13 +17,4 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
         </div>
     <?php } ?>
 </div>
-<?=$arResult['NAV_STRING']?>
-<div class="pagination">
-    <div class="pagination__list">
-        <a class="pagination__prev" href=""> </a><a class="pagination__page active" href="">1</a><a
-                class="pagination__page" href="">2</a><a class="pagination__page" href="">...</a><a
-                class="pagination__page" href="">19</a><a class="pagination__next" href=""> </a>
-    </div>
-    <button class="btn btn--grey btn--m">Показать ещё &nbsp;<span id="cur-page">15</span>&nbsp;из&nbsp;
-        <span id="total-pages">100</span></button>
-</div>
+<?= $arResult['NAV_STRING'] ?>

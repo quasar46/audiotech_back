@@ -500,6 +500,31 @@ document.addEventListener("DOMContentLoaded", function () {
         myFancy();
     }
 
+    // document.querySelector('.load-more-items').addEventListener('click', function() {
+    //     var targetContainer = document.querySelector('.news__list');
+    //     var url = document.querySelector('.load-more-items').getAttribute('data-url');
+    //
+    //     if (url !== undefined) {
+    //         $.ajax({
+    //             type: 'GET',
+    //             url: url,
+    //             dataType: 'html',
+    //             success: function(data){
+    //
+    //                 document.querySelector('.load-more-items').remove();
+    //
+    //                 var elements = $(data).find('.item-content'),
+    //                     pagination = $(data).find('.load-more-items');
+    //
+    //                 targetContainer.append(elements);
+    //                 document.querySelector('.pagination__list').append(pagination);
+    //
+    //             }
+    //         });
+    //     }
+    // })
+
+
 
 });
 

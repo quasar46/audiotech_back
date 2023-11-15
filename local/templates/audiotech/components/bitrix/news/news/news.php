@@ -44,9 +44,7 @@ $this->setFrameMode(true); ?>
                             <p class="aside-block__agree">
                                 Подписываясь, вы даете согласие на <a href="">обработку персональных данных</a>
                             </p>
-                            <button class="btn btn--red btn--l btn--icn" type="submit">
-                                Подписаться
-                            </button>
+                            <button class="btn btn--red btn--l btn--icn" type="submit">Подписаться</button>
                         </div>
                         <?php //TODO компонент подписки ?>
                         <?php $APPLICATION->IncludeComponent(
@@ -103,7 +101,6 @@ $this->setFrameMode(true); ?>
                             ['HIDE_ICONS' => 'Y']
                         ); ?>
                     </div>
-
                 </div>
             </div>
         </div>

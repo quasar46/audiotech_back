@@ -17,19 +17,23 @@ $this->setFrameMode(true); ?>
 
 <div class="about">
     <div class="_container">
-        <h1 class="title-page">О нас</h1>
+        <h1 class="title-page"><?php $APPLICATION->ShowTitle('false') ?></h1>
     </div>
     <div class="_container _container--mode">
         <div class="tabs__nav">
             <a class="tabs__btn" href="/about/company">Компания</a> <a class="tabs__btn" href="/about/specialists">Специалисты</a>
             <a class="tabs__btn active" href="/about/news">Новости</a> <a class="tabs__btn" href="/about/licenses">Лицензии</a>
         </div>
+        <?php //TODO компонент меню ?>
         <div class="tabs__content">
             <div class="tabs__pane show">
                 <div class="tabs__pane-wrap">
                     <?php $APPLICATION->IncludeComponent(
                         'audiotech:section.list',
                         '',
+                        [
+                            'IBLOCK_ID' => '17'
+                        ]
                     ) ?>
                     <div class="news">
                         <div class="subscribe">
@@ -44,6 +48,7 @@ $this->setFrameMode(true); ?>
                                 Подписаться
                             </button>
                         </div>
+                        <?php //TODO компонент подписки ?>
                         <?php $APPLICATION->IncludeComponent(
                             "bitrix:news.list",
                             "news",
@@ -98,15 +103,7 @@ $this->setFrameMode(true); ?>
                             ['HIDE_ICONS' => 'Y']
                         ); ?>
                     </div>
-                    <div class="pagination">
-                        <div class="pagination__list">
-                            <a class="pagination__prev" href=""> </a><a class="pagination__page active" href="">1</a><a
-                                    class="pagination__page" href="">2</a><a class="pagination__page" href="">...</a><a
-                                    class="pagination__page" href="">19</a><a class="pagination__next" href=""> </a>
-                        </div>
-                        <button class="btn btn--grey btn--m">Показать ещё &nbsp;<span id="cur-page">15</span>&nbsp;из&nbsp;
-                            <span id="total-pages">100</span></button>
-                    </div>
+
                 </div>
             </div>
         </div>

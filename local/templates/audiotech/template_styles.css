@@ -4039,6 +4039,7 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 0;
 }
 .pagination__list > * {
   min-width: 40px;
@@ -6161,6 +6162,16 @@ button {
   height: 7px;
   background-color: #ccc;
   border-radius: 50%;
+}
+
+.tabs__content .pagination {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 700px) {
+  .tabs__content .pagination {
+    margin-bottom: 65px;
+  }
 }
 
 @media (max-width: 700px) {

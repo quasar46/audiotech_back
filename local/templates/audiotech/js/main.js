@@ -500,6 +500,17 @@ document.addEventListener("DOMContentLoaded", function () {
         myFancy();
     }
 
+    BX.ajax.runComponentAction("audiotech:feedback", "send", {
+        mode: "class",
+        data: {
+            "email": "vasya@email.tld",
+            "username": "Василий",
+            "message": "Где мой заказ? Жду уже целый час!"
+        }
+    }).then(function (response) {
+        // обработка ответа
+    });
+
     // document.querySelector('.load-more-items').addEventListener('click', function() {
     //     var targetContainer = document.querySelector('.news__list');
     //     var url = document.querySelector('.load-more-items').getAttribute('data-url');

@@ -8,11 +8,8 @@ $request = Context::getCurrent()->getRequest();
 
 $el = new CIBlockElement;
 
-$PROP = [];
-$PROP['ATT_EMAIL'] = $request['email'];
 $arLoadProductArray = [
     'IBLOCK_ID' => 23,
-    'PROPERTY_VALUES' => $PROP,
     'ACTIVE' => 'Y',
     'NAME' => $request['email'],
 ];

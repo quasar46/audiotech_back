@@ -23,10 +23,10 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"О нас", 
-		"/about/",
+		"/about/kompaniya/",
 		Array(), 
 		Array(), 
-		"" 
+		""
 	),
 	Array(
 		"Покупателям", 
